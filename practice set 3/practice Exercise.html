@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice Exercise</title>
+</head>
+
+<body>
+    <div id="name-display">
+
+    </div>
+    <script>
+        const myName = 'Harsh';
+        console.log(myName);
+
+        document.querySelector('#name-display').innerText = myName;
+
+        let iphonePrice = 79990;
+        let earbudPrice = 24990;
+        const gstTax = (18 / 100);
+
+        let bagValue = (Math.round((gstTax * iphonePrice) + iphonePrice) + (2 * (gstTax * earbudPrice) + earbudPrice));
+        let cartValue = `Your final Myntra Bag amount is $ ${bagValue}`;
+        console.log(cartValue);
+
+        console.log(eval('45+45'));
+
+    </script>
+
+</body>
+
+</html>

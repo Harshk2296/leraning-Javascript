@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Numbers</title>
+</head>
+
+<body>
+  <button onclick="
+    let number = 13;
+    checkNumOddEven(number);
+    
+
+function checkNumOddEven(number) {
+   
+    if (number%2 === 0) {
+        alert(`${number} is even`);
+    } else if (number %2 === 1) {
+        alert(`${number} is odd`);
+    }
+}
+    ">check</button>
+
+  <button onclick="
+    let number_1 =12;
+    let number_2 =19;
+    largerNumber(number_1, number_2);
+
+
+    function largerNumber(number_1,number_2){
+      console.log(`number 1 = ${number_1} and number 2 = ${number_2}`);
+      if(number_1 >= number_2){
+        alert(`number_1 = ${number_1} is greater`);
+      }else{
+        alert(`number_2 = ${number_2} is grater`);
+      }
+    }
+
+    
+    ">larger number</button>
+
+  <button onclick="
+let temprature = 37;
+let fahrenheit;
+console.log(convertTemp(temprature));
+alert(convertTemp(temprature));
+
+ function convertTemp(temprature){
+      //  fahrenheit = ((9/5)* temprature + 32);
+      // console.log(fahrenheit)
+      // return alert(`${fahrenheit}`) 
+      return 9/5 * temprature + 32;
+ }
+
+">convert</button>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <div class="my-div">this is the div</div>
+
+    <script>
+        // console.log(document.location);
+        // console.log(document.href);
+        // console.log(document.title);
+        // console.log(document.domain);
+        // console.log(document.innerHTML);
+        // console.log(document.innerText);
+        // console.log(document.classList);
+
+        // console.log(document.querySelector('button').classList.add('yourbutton'));
+
+
+        let button = document.createElement('Button');
+        button.innerText = 'click me';
+        document.querySelector('.my-div').appendChild(button);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Accumulator Pattern</title>
+</head>
+
+<body>
+    <script>
+        let nums = [3, 6, 7, 9, 9];
+        let sum = 0;
+        for (let index = 0; index < nums.length; index++) {
+            sum = sum + nums[index];
+            // console.log(sum);
+        }
+        console.log(`sum of the array ${sum}`);
+
+
+
+
+
+
+        let squares = [];
+        for (let i = 0; i <= nums.length; i++) {
+            // squares[i] = nums[i] * nums[i];
+            squares.push(nums[i] * nums[i]);
+        }
+        console.log(squares);
+
+
+    </script>
+
+</body>
+
+</html>
