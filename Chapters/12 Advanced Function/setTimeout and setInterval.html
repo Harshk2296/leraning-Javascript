@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>setTimeout and setInterval</title>
+</head>
+
+<body>
+    <script>
+        let alarm = () => console.log(`get up . ${new Date()}`);
+        // let timerId = setTimeout(() => console.log('get up , sun is up'), 9000);
+        // console.log(`Alarm set with timerID : ${timerId}`);
+        // clearTimeout(timerId);
+        let intervalId = setInterval(alarm, 3000);
+        setTimeout(() => clearInterval(intervalId), 10000);
+    </script>
+</body>
+
+</html>
